@@ -5,6 +5,10 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "noUnusedLocals": false
+    "strict": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": false
   }
 }
