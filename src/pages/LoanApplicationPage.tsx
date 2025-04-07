@@ -23,7 +23,6 @@ const LoanApplicationPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      setRole(prev=>prev);
       const res = await axios.post(
         'https://backend-loan-manager.onrender.com/applications/submit',
         form,
@@ -33,6 +32,7 @@ const LoanApplicationPage = () => {
           },
         }
       );
+      console.log(res);
       setSuccess('Application submitted successfully!');
       setForm({ fullName: '', email: user?.email || '', amount: '' });
       setIsModalOpen(true);
