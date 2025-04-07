@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const LoanApplicationPage = () => {
   const { token, user } = useAuth();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [form, setForm] = useState({
