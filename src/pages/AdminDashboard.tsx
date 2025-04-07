@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchAllAdmins, deleteAdminById } from '../api/api';
 
 const AdminDashboard = () => {
