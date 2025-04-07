@@ -39,6 +39,7 @@ const DashboardPage = () => {
         const fetchLoans = async () => {
             try {
                 const res = await API.get('/applications');
+                setRole(prev=>prev);
                 setLoans(res.data);
             } catch (err) {
                 console.error('❌ Failed to fetch loans:', err);
